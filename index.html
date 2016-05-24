@@ -1,10 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+</head>
+<body>
 <h1>My new website</h1>
 <h2>katex</h2>
-<script>
-katex.render("c = \\pm\\sqrt{a^2 + b^2}", element);
-</script>
+    <div id="results" class="katex"></div>
+    <script>
+    var eq = 'f(x) = \\int_{-\\infty}^\\infty\\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\\,d\\xi';
+    //var eq = "f(x) = \\pm\\sqrt{a^2 + b^2}"
+      katex.render(eq, document.getElementById('results'));
+    </script>
 <h2>markdown</h2>
 On firefox, I installed Markdown Viewer.
 <a href="next.md">markdown attempt</a>
+</body>
+</html>
